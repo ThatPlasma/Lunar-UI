@@ -32,8 +32,8 @@ Label
 
 $main-menu-top-bar-height: 6.5%
 $main-menu-top-bar-width: 300px
-$main-menu-border-radius: 8px
-$main-menu-background-color: #222
+$main-menu-border-radius: 10px
+$main-menu-background-color: #22222256
 $main-menu-top-bar-button-width: math.div(1, 4)
 
 #MainMenuTopBar
@@ -46,6 +46,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 	padding-left: 20px
 	padding-right: 20px
 	flow-children: right
+	border-radius: 20px
 
 	Button,
 	TextButton
@@ -57,7 +58,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 		width: fill-parent-flow($main-menu-top-bar-button-width)
 		height: 100%
 		&:hover
-			background-color: #555
+			background-color: #898f9eaa
 
 		Label
 			text-align: center
@@ -76,9 +77,9 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 
 #MainMenuTopBarCampaignContent
 	width: 35%
-	height: 75%
+	height: 54.8%
 	flow-children: none
-
+	background-color: #00000000
 	#MainMenuTopBarCampaignContentList
 		width: 100%
 		height: 100%
@@ -91,7 +92,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 			border-bottom: 2px solid #444
 			background-color: #333
 			&:hover
-				background-color: #444
+				background-color: #898f9eaa
 
 			Image
 				width: 116px
@@ -109,11 +110,6 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 		font-size: 18px
 		margin-bottom: 1.5%
 
-#MainMenuTopBarWorkshopContent
-	width: 100% - ($main-menu-top-bar-height * 0.75)
-	height: 100% - ($main-menu-top-bar-height * 1.5)
-	flow-children: down
-
 #MainMenuTopBarSettingsContent
 	$main-menu-settings-category-width: 20%
 
@@ -126,7 +122,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 		height: 100%
 		overflow: scroll
 		flow-children: down
-		background-color: #4442
+		background-color: #444444
 
 		.MainMenuTopBarSettingsCategoryListEntry
 			width: 100%
@@ -135,7 +131,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 			flow-children: right
 			background-color: #333
 			&:hover
-				background-color: #444
+				background-color: #89798f
 			
 			Label
 				align: center center
@@ -202,7 +198,7 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 		width: 50% - ($button-side-padding * 1.5)
 		height: 50%
 		&:hover
-			background-color: #aaaa
+			background-color: #d2daf0aa
 	TextButton#MainMenuTopBarQuitButtonYes
 		margin-left: $button-side-padding
 		margin-right: math.div($button-side-padding, 2)
@@ -239,13 +235,13 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 
 @keyframes pauseMenuVignette
 	0%
-		saturation: 1.0
+		saturation: 0.0
 		blur: fastgaussian(0.0)
 		wash-color-fast: #00000000
 	100%
-		saturation: 0.35
+		saturation: 0.5
 		blur: fastgaussian(6.0)
-		wash-color-fast: #000000a0
+		wash-color-fast: #794c70a0
 
 .PauseMenuFade
 	animation-name: pauseMenuFade
@@ -259,26 +255,3 @@ $main-menu-top-bar-button-width: math.div(1, 4)
 		opacity: 0.0
 	100%
 		opacity: 1.0
-
-
-//----------------------//
-//---- Beta Display ----//
-//----------------------//
-
-#MainMenuBetaDisplay
-	$main-menu-beta-display-height: 10%
-	height: $main-menu-beta-display-height
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #333D ), to( #333F ) )
-	border-top-left-radius: $main-menu-border-radius
-	align: right bottom
-	flow-children: down
-	
-	#MainMenuBetaDisplayHeader,
-	#MainMenuBetaDisplaySubheader
-		font-size: 24px
-		padding: 0px 16px
-		horizontal-align: right
-	
-	#MainMenuBetaDisplayHeader
-		font-size: 36px
-		padding-top: 16px

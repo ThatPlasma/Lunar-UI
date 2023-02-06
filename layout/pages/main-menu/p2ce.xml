@@ -6,7 +6,7 @@
 	<scripts>
 		<include src="file://{resources}/scripts/mainmenu/mainmenu_p2ce.js" />
 	</scripts>
-
+	
 	<Panel class="MainMenuNavlistContainer">
 		<Image id="MainMenuLogoDark"
 				class="MainMenuOnly"
@@ -23,8 +23,8 @@
 			<TextButton id="MainMenuNavBarCampaign"
 					class="MainMenuNavlistItem MainMenuOnly"
 					group="NavBar"
-					onactivate="$.DispatchEvent( 'P2CEMainMenuPlayMap', 'sp_p2ce_campaign_hub' );"
-					text="Enter Campaign Hub" />
+					onactivate="$.DispatchEvent( 'P2CEMainMenuPlayMap', 'sp_a1_intro1' );"
+					text="Start New Game" />
 
 			<!-- trolled (this is actually really useful for playtesting, it will be removed later) -->
 			<TextButton id="MainMenuNavBarGoToTripleLaser"

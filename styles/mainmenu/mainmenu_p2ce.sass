@@ -4,21 +4,21 @@ Label
 
 #MainMenuLogoDark,
 #MainMenuLogoLight
-	margin-top: 5%
+	margin-top: 0.5%
 	align: center center
 	width: 95%
 
 .MainMenuNavlistContainer
 	width: 40%
-	height: 50%
-	border-radius: 8px
-	margin-left: 7.5%
+	height: 63%
+	border-radius: 80px
+	margin-left: 5.5%
 	vertical-align: center
 	flow-children: down
 
 .MainMenu.MainMenuNavlistContainer
 	// todo: use a portal 2 style background
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #333D ), to( #3338 ) )
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #7a4172dd ), to( #50318588 ) )
 
 .MainMenuNavlist
 	width: 75%
@@ -27,24 +27,30 @@ Label
 
 .MainMenuNavlistItem,
 .MainMenuNavlistItemDisabled
+	border-left: 10px solid #4b4a4b	
 	width: 100%
 	height: 48px
 	background-color: #ddddddbb
-	border-left: 8px solid #999999dd
-	transition: border-left-color 0.1s ease-in-out
-	margin-top: 12px
+	margin-top: 20px
+
+	transition-property: border, box-shadow, background-color
+	transition-duration: 0.1s
+	transition-timing-function: ease-in-out
 
 	> Label
 		width: 100%
-		color: #222
+		color: #4d4d4d
 		margin-left: 5%
 
 .MainMenuNavlistItem:hover
-	border-left-color: #ff7d02ff
-	background-color: #aaaa
-
+	box-shadow: #f07ee280 4px 4px 8px 0px
+	border-left-color: #ff00ff
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #ecd4e9dd ), to( #e259c088 ) )
+	border-left: 0px
+	transition: border-left 0.6s linear
+	border-left: 15px
 .MainMenuNavlistItemDisabled
-	background-color: #ccccccbb
+	background-color: #383838bb
 
 
 .MainMenu .PauseMenuOnly

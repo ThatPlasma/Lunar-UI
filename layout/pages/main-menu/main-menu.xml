@@ -74,15 +74,6 @@
 						defaultsrc=""
 						scaling="stretch-to-fit-y-preserve-aspect" />
 			</Button>
-			<Button id="MainMenuTopBarAddons"
-					group="MainMenuTopBar"
-					onactivate="MainMenuController.onWorkshopMenuButtonPressed();">
-				<Image  id="MainMenuTopBarAddonsIcon"
-						src=""
-						defaultsrc="file://{images}/menu/addons.svg"
-						textureheight="64"
-						scaling="stretch-to-fit-y-preserve-aspect" />
-			</Button>
 			<Button id="MainMenuTopBarSettings"
 					group="MainMenuTopBar"
 					onactivate="MainMenuController.onSettingsMenuButtonPressed();">
@@ -113,7 +104,7 @@
 					<Image	src=""
 							defaultsrc="file://{images}/menu/p2ce/logo.png"
 							scaling="stretch-to-cover-preserve-aspect" />
-					<Label text="Portal 2: Community Edition" />
+					<Label text="Portal Neon" />
 				</Button>
 				<Button class="MainMenuTopBarCampaignContentListEntry"
 						group="MainMenuTopBarCampaignContent"
@@ -124,7 +115,7 @@
 					<Label text="Portal 2" />
 				</Button>
 			</Panel>
-			<Label text="Subscribe to campaigns on the Workshop, and you'll see them here!" />
+		
 		</Panel>
 		<Panel id="MainMenuTopBarWorkshopContent" class="MainMenuTopBarContent" hittest="true">
 			<!-- todo: addons panel -->
@@ -216,12 +207,7 @@
 			</Panel>
 		</Panel>
 
-		<Panel id="MainMenuBetaDisplay">
-			<Label id="MainMenuBetaDisplayHeader" text="Beta Main Menu" />
-			<Label id="MainMenuBetaDisplaySubheader" text="Menu is not finalized and subject to change." />
-		</Panel>
-
-		<!-- Make sure these are at the bottom to get the z-order right -->
+	<!-- Make sure these are at the bottom to get the z-order right -->
 		<ChaosPopupManager id="PopupManager" onpopupsdismissed="" />
 		<ContextMenuManager id="ContextMenuManager" />
 		<ChaosTooltipManager id="TooltipManager" hittest="false" />

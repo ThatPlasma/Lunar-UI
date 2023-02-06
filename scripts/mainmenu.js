@@ -27,12 +27,12 @@ var MainMenuController = (function () {
 	// When menu gets more complex, rewrite
 	const presence = {
 		discord: {
-			state: "Idling",
-			name: "P2:CE",
+			state: "In Main Menu",
+			name: "Portal Neon",
 			details: "Main Menu",
 			assets: {
-				large_image: "logo_square",
-				large_text: "Portal 2: Community Edition",
+				large_image: "logo",
+				large_text: "Portal Neon",
 			},
 		},
 		steam: {
@@ -54,7 +54,6 @@ var MainMenuController = (function () {
 	function _onShowMainMenu() {
 		pauseMenuActive = false;
 		$("#MainMenuTopBarCampaign").visible = true;
-		$("#MainMenuTopBarAddons").visible = true;
 
 		_resetAllSubMenuSvgIcons(); // HACK HACK STUPID HACK
 
@@ -92,8 +91,7 @@ var MainMenuController = (function () {
 	function _onShowPauseMenu() {
 		pauseMenuActive = true;
 		$("#MainMenuTopBarCampaign").visible = false;
-		$("#MainMenuTopBarAddons").visible = false;
-
+	
 		_resetAllSubMenuSvgIcons(); // HACK HACK STUPID HACK
 
 		$("#MainMenuContainerPanel").AddClass("PauseMenuFade");
@@ -156,7 +154,7 @@ var MainMenuController = (function () {
 	}
 
 	function _resetAllSubMenuSvgIcons() {
-		$("#MainMenuTopBarAddonsIcon").SetImage("file://{images}/menu/addons.svg");
+	
 		$("#MainMenuTopBarSettingsIcon").SetImage("file://{images}/icons/settings.svg");
 		$("#MainMenuTopBarQuitIcon").SetImage("file://{images}/menu/quit.svg");
 	}
