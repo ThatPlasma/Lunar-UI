@@ -1,6 +1,6 @@
-# A modified version of P2:CE Panorama UI
+# A modified version of P2:CE's Panorama UI
 
-This directory contains the layouts, scripts and styles for P2CE's Panorama UI.
+This directory contains a modified version of P2:CE's Panorama UI
 
 ## Folder Structure
 - `browser/` -- Contains a webkit css file for browser widget
